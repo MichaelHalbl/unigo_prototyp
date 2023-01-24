@@ -1,5 +1,3 @@
-// ignore_for_file: non_constant_identifier_names
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_connect/http/src/utils/utils.dart';
@@ -62,9 +60,13 @@ class FahrtSuchen extends StatelessWidget {
     );
   }
 
+
+
 //Button zum Senden der Daten
   Container _buildSende() {
     return Container(
+      width: 250,
+      height: 50,
       margin: const EdgeInsets.all(80.0),
       child: TextButton(
         onPressed: () {},
