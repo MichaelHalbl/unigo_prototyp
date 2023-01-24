@@ -62,14 +62,25 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
   Container _buildAngaben() {
     return Container(
       width: double.infinity,
-      height: 250,
+      height: 275,
       color: Colors.teal,
       child: Column(
         children: [
           Row(
             children: [
-              Text(
-                'Deine Angaben',
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.teal,
+                ),
+                height: 50,
+                width: 250,
+                padding: const EdgeInsets.all(12),
+                child: Text(
+                  'Deine Angaben:',
+                  style: TextStyle(fontSize: 20),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ],
           ),
@@ -78,10 +89,10 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               color: Colors.white,
             ),
-            height: 80,
+            height: 90,
             width: 450,
-            margin: const EdgeInsets.all(25),
-            padding: const EdgeInsets.all(20),
+            margin: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(5),
             child: Column(
               children: [
                 Text(
@@ -96,9 +107,10 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
                       height: 25,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.red,
+                        color: Colors.teal,
                       ),
-                      margin: const EdgeInsets.symmetric(horizontal: 20.0),
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 5.0, vertical: 5),
                       child: Column(
                         children: [
                           Text(
@@ -110,14 +122,60 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
                       ),
                     ),
                     Container(
+                      width: 90,
+                      height: 25,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.teal,
+                      ),
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 5.0, vertical: 20),
+                      child: Column(
+                        children: [
+                          Text(
+                            'E-Auto',
+                            style: TextStyle(fontSize: 12),
+                            textAlign: TextAlign.center,
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
                       width: 80,
                       height: 25,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.red,
+                        color: Colors.teal,
                       ),
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 5.0, vertical: 5),
                       child: Column(
-                        children: [Text('Raucher')],
+                        children: [
+                          Text(
+                            'Tier',
+                            style: TextStyle(fontSize: 12),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 90,
+                      height: 25,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.teal,
+                      ),
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 5.0, vertical: 5),
+                      child: Column(
+                        children: [
+                          Text(
+                            'Musik',
+                            style: TextStyle(fontSize: 12),
+                            textAlign: TextAlign.center,
+                          )
+                        ],
                       ),
                     ),
                   ],
@@ -131,34 +189,62 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               color: Colors.white,
             ),
-            height: 80,
+            height: 90,
             width: 450,
-            margin: const EdgeInsets.all(0),
-            padding: const EdgeInsets.all(20),
+            margin: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(5),
             child: Column(
               children: [
                 Text(
-                  'Fahrzeug',
+                  'Präferenzen',
                   style: TextStyle(fontSize: 12),
                   textAlign: TextAlign.left,
                 ),
                 Row(
                   children: [
                     Container(
-                      width: 60,
-                      height: 20,
+                      width: 100,
+                      height: 25,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.red,
+                        color: Colors.teal,
                       ),
-                      margin: const EdgeInsets.symmetric(horizontal: 8.0),
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 5.0,),
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            height: 10,
+                          ),
+                          TextField(
+                            textAlign: TextAlign.center,
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(),
+                              hintText: 'Fahrzeug...',
+                              isDense: true, // Added this
+                              contentPadding: EdgeInsets.all(0), // Added this
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                     Container(
-                      width: 60,
-                      height: 20,
+                      width: 90,
+                      height: 25,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.red,
+                        color: Colors.teal,
+                      ),
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 5.0, vertical: 20),
+                      child: Column(
+                        children: [
+                          Text(
+                            'E-Auto',
+                            style: TextStyle(fontSize: 12),
+                            textAlign: TextAlign.center,
+                          )
+                        ],
                       ),
                     ),
                   ],
@@ -304,4 +390,3 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
     );
   }
 }
-
