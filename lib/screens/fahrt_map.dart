@@ -2,11 +2,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:unigo_prototyp/widgets/svg_scaffold_widget.dart';
 
-class FahrtMap extends StatelessWidget {
-  const FahrtMap({Key? key}) : super(key: key);
+class FahrtSuchen extends StatelessWidget {
+  const FahrtSuchen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +62,6 @@ class FahrtMap extends StatelessWidget {
     );
   }
 
-
 //Button zum Senden der Daten
   Container _buildSende() {
     return Container(
@@ -73,9 +73,9 @@ class FahrtMap extends StatelessWidget {
           backgroundColor: MaterialStateProperty.all(Colors.teal),
           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-                side: BorderSide(color: Colors.teal),
-              )),
+            borderRadius: BorderRadius.circular(10),
+            side: BorderSide(color: Colors.teal),
+          )),
         ),
         child: Text('Suchen', style: TextStyle(fontSize: 20)),
       ),
@@ -134,7 +134,8 @@ class FahrtMap extends StatelessWidget {
       alignment: Alignment.bottomCenter,
       margin: const EdgeInsets.all(20),
       padding: const EdgeInsets.all(30),
-      child: Image.network('https://cdn.pixabay.com/photo/2019/03/08/15/55/map-4042585_960_720.png'),
+      child: Image.network(
+          'https://cdn.pixabay.com/photo/2019/03/08/15/55/map-4042585_960_720.png'),
     );
   }
 
@@ -153,9 +154,9 @@ class FahrtMap extends StatelessWidget {
                 backgroundColor: MaterialStateProperty.all(Colors.grey),
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.grey),
-                    )),
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                )),
               ),
               child: Text('Ort'),
             ),
@@ -169,9 +170,9 @@ class FahrtMap extends StatelessWidget {
                 backgroundColor: MaterialStateProperty.all(Colors.grey),
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.grey),
-                    )),
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                )),
               ),
               child: Text('Datum'),
             ),
@@ -185,9 +186,9 @@ class FahrtMap extends StatelessWidget {
                 backgroundColor: MaterialStateProperty.all(Colors.grey),
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.grey),
-                    )),
+                  borderRadius: BorderRadius.circular(10),
+                  side: BorderSide(color: Colors.grey),
+                )),
               ),
               child: Text('Zeit'),
             ),

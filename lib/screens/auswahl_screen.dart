@@ -24,7 +24,7 @@ class AuswahlScreen extends StatelessWidget {
           _spacer(),
           _buildRouteButton(context, "Registrieren Screen", RegistrierenScreen()),
           _spacer(),
-          _buildRouteButton(context, "Fahrten Map Screen", FahrtMap()),
+          _buildRouteButton(context, "Fahrten Map Screen", FahrtSuchen()),
         ],
       ),
     ));
