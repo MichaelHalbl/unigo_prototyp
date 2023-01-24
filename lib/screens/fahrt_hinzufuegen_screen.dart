@@ -60,76 +60,110 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
   }
 
   Container _buildAngaben() {
-   Text('Hallo');
     return Container(
       width: double.infinity,
       height: 250,
       color: Colors.teal,
       child: Column(
         children: [
+          Row(
+            children: [
+              Text(
+                'Deine Angaben',
+              ),
+            ],
+          ),
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.blue,
+              color: Colors.white,
             ),
             height: 80,
             width: 450,
             margin: const EdgeInsets.all(25),
-            padding: const EdgeInsets.all(30),
-            child: Row(
+            padding: const EdgeInsets.all(20),
+            child: Column(
               children: [
-                Container(
-                  child: Text(
-                    'Präferenzen',
-                    style: TextStyle(fontSize: 12),
-                    textAlign: TextAlign.center,
-
-                  ),
+                Text(
+                  'Präferenzen',
+                  style: TextStyle(fontSize: 12),
+                  textAlign: TextAlign.left,
                 ),
-                TextButton(
-                  onPressed: () {},
-                  style: ButtonStyle(
-                    foregroundColor: MaterialStateProperty.all(Colors.white),
-                    backgroundColor: MaterialStateProperty.all(Colors.grey),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.grey),
-                    )),
-                  ),
-                  child: Text('Raucher'),
+                Row(
+                  children: [
+                    Container(
+                      width: 80,
+                      height: 25,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.red,
+                      ),
+                      margin: const EdgeInsets.symmetric(horizontal: 20.0),
+                      child: Column(
+                        children: [
+                          Text(
+                            'Musik',
+                            style: TextStyle(fontSize: 12),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 80,
+                      height: 25,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.red,
+                      ),
+                      child: Column(
+                        children: [Text('Raucher')],
+                      ),
+                    ),
+                  ],
                 ),
+                Container(),
               ],
             ),
           ),
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Colors.blue,
+              color: Colors.white,
             ),
             height: 80,
             width: 450,
             margin: const EdgeInsets.all(0),
-            padding: const EdgeInsets.all(30),
-            child: Row(
+            padding: const EdgeInsets.all(20),
+            child: Column(
               children: [
                 Text(
                   'Fahrzeug',
                   style: TextStyle(fontSize: 12),
+                  textAlign: TextAlign.left,
                 ),
-                TextButton(
-                  onPressed: () {},
-                  style: ButtonStyle(
-                    foregroundColor: MaterialStateProperty.all(Colors.white),
-                    backgroundColor: MaterialStateProperty.all(Colors.grey),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      side: BorderSide(color: Colors.grey),
-                    )),
-                  ),
-                  child: Text('Fahrzeug Platzhalter'),
+                Row(
+                  children: [
+                    Container(
+                      width: 60,
+                      height: 20,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.red,
+                      ),
+                      margin: const EdgeInsets.symmetric(horizontal: 8.0),
+                    ),
+                    Container(
+                      width: 60,
+                      height: 20,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.red,
+                      ),
+                    ),
+                  ],
                 ),
+                Container(),
               ],
             ),
           ),
@@ -270,3 +304,4 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
     );
   }
 }
+
