@@ -240,7 +240,7 @@ class FahrtHinzufuegenScreen extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            'E-Auto',
+                            'Auto Symbol',
                             style: TextStyle(fontSize: 12),
                             textAlign: TextAlign.center,
                           )

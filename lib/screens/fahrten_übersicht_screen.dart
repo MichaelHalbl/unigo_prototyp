@@ -46,7 +46,6 @@ class FahrtUebersicht extends StatelessWidget {
       ),
       backgroundColor: Colors.white,
       body: Column(
-
         children: <Widget>[
           //Aktuelles Datum
           _buildDate(),
@@ -56,7 +55,7 @@ class FahrtUebersicht extends StatelessWidget {
           _buildFahrt2(),
           _buildFahrt3(),
           _buildFahrt4(),
-          _buildFahrt5(),
+          //_buildFahrt5(),
         ],
       ),
     );
@@ -88,11 +87,39 @@ class FahrtUebersicht extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         color: Colors.teal,
       ),
-      height: 100,
+      height: 125,
       width: 550,
-      alignment: Alignment.bottomCenter,
       margin: const EdgeInsets.all(10),
       padding: const EdgeInsets.all(20),
+      child: Column(
+        children: [
+          Container(
+            alignment: Alignment.topLeft,
+            child: Text('Musterstart'),
+          ),
+          Row(
+            children: [
+              Container(
+                alignment: Alignment.centerLeft,
+                margin: const EdgeInsets.all(20),
+                child: Text('Pfeil'),
+              ),
+              Container(
+                alignment: Alignment.centerRight,
+                margin: const EdgeInsets.all(20),
+                child: Text('Uhrzeit'),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 13,
+            child: Container(
+              alignment: Alignment.bottomLeft,
+              child: Text('Hochschule Fulda'),
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -102,11 +129,39 @@ class FahrtUebersicht extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         color: Colors.teal,
       ),
-      height: 100,
+      height: 125,
       width: 550,
-      alignment: Alignment.bottomCenter,
       margin: const EdgeInsets.all(10),
       padding: const EdgeInsets.all(20),
+      child: Column(
+        children: [
+          Container(
+            alignment: Alignment.topLeft,
+            child: Text('Musterstart'),
+          ),
+          Row(
+            children: [
+              Container(
+                alignment: Alignment.centerLeft,
+                margin: const EdgeInsets.all(20),
+                child: Text('Pfeil'),
+              ),
+              Container(
+                alignment: Alignment.centerRight,
+                margin: const EdgeInsets.all(20),
+                child: Text('Uhrzeit'),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 13,
+            child: Container(
+              alignment: Alignment.bottomLeft,
+              child: Text('Hochschule Fulda'),
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -116,11 +171,39 @@ class FahrtUebersicht extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         color: Colors.teal,
       ),
-      height: 100,
+      height: 125,
       width: 550,
-      alignment: Alignment.bottomCenter,
       margin: const EdgeInsets.all(10),
       padding: const EdgeInsets.all(20),
+      child: Column(
+        children: [
+          Container(
+            alignment: Alignment.topLeft,
+            child: Text('Musterstart'),
+          ),
+          Row(
+            children: [
+              Container(
+                alignment: Alignment.centerLeft,
+                margin: const EdgeInsets.all(20),
+                child: Text('Pfeil'),
+              ),
+              Container(
+                alignment: Alignment.centerRight,
+                margin: const EdgeInsets.all(20),
+                child: Text('Uhrzeit'),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 13,
+            child: Container(
+              alignment: Alignment.bottomLeft,
+              child: Text('Hochschule Fulda'),
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -130,11 +213,39 @@ class FahrtUebersicht extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         color: Colors.teal,
       ),
-      height: 100,
+      height: 125,
       width: 550,
-      alignment: Alignment.bottomCenter,
       margin: const EdgeInsets.all(10),
       padding: const EdgeInsets.all(20),
+      child: Column(
+        children: [
+          Container(
+            alignment: Alignment.topLeft,
+            child: Text('Musterstart'),
+          ),
+          Row(
+            children: [
+              Container(
+                alignment: Alignment.centerLeft,
+                margin: const EdgeInsets.all(20),
+                child: Text('Pfeil'),
+              ),
+              Container(
+                alignment: Alignment.centerRight,
+                margin: const EdgeInsets.all(20),
+                child: Text('Uhrzeit'),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 13,
+            child: Container(
+              alignment: Alignment.bottomLeft,
+              child: Text('Hochschule Fulda'),
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -144,11 +255,39 @@ class FahrtUebersicht extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         color: Colors.teal,
       ),
-      height: 100,
+      height: 125,
       width: 550,
-      alignment: Alignment.bottomCenter,
       margin: const EdgeInsets.all(10),
       padding: const EdgeInsets.all(20),
+      child: Column(
+        children: [
+          Container(
+            alignment: Alignment.topLeft,
+            child: Text('Musterstart'),
+          ),
+          Row(
+            children: [
+              Container(
+                alignment: Alignment.centerLeft,
+                margin: const EdgeInsets.all(20),
+                child: Text('Pfeil'),
+              ),
+              Container(
+                alignment: Alignment.centerRight,
+                margin: const EdgeInsets.all(20),
+                child: Text('Uhrzeit'),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 13,
+            child: Container(
+              alignment: Alignment.bottomLeft,
+              child: Text('Hochschule Fulda'),
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -158,11 +297,39 @@ class FahrtUebersicht extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         color: Colors.teal,
       ),
-      height: 100,
+      height: 125,
       width: 550,
-      alignment: Alignment.bottomCenter,
       margin: const EdgeInsets.all(10),
       padding: const EdgeInsets.all(20),
+      child: Column(
+        children: [
+          Container(
+            alignment: Alignment.topLeft,
+            child: Text('Musterstart'),
+          ),
+          Row(
+            children: [
+              Container(
+                alignment: Alignment.centerLeft,
+                margin: const EdgeInsets.all(20),
+                child: Text('Pfeil'),
+              ),
+              Container(
+                alignment: Alignment.centerRight,
+                margin: const EdgeInsets.all(20),
+                child: Text('Uhrzeit'),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 13,
+            child: Container(
+              alignment: Alignment.bottomLeft,
+              child: Text('Hochschule Fulda'),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
